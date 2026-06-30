@@ -5,14 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Synergy Team - Mod Lists for Skyrim VR</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/synergy.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/synergy.css">
+  <script src="assets/synergy.js"></script>
 </head>
 <body>
   <div class="parallax-container">
     <div class="parallax-layer layer-background" data-speed="0.05" ></div>
   </div>
+  <nav>
+    <ul>
+      <li><a href="mgo">Mad God's Overhaul</a></li>
+      <li><a href="nordic">Nordic Adventures</a></li>
+      <li><a href="synergy-vr">Synergy VR</a></li>
+    </ul>
+  </nav>
   <div class="logo"><img src="assets/synergy.png" alt="Synergy VR"></div>
   <div id="teaser">
     <h2>A group of passionate developers and members of the Skyrim VR community.</h2>
@@ -28,20 +36,6 @@
     <svg id="arrow-fg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><g><path d="M71.709,48.277L53,70.418V21c0-1.657-1.343-3-3-3s-3,1.343-3,3v48.806L29.316,48.308c-1.052-1.279-2.943-1.465-4.223-0.41   c-1.279,1.052-1.463,2.942-0.41,4.223l23.184,28.185c0.565,0.687,1.406,1.088,2.297,1.094c0.006,0,0.013,0,0.02,0   c0.883,0,1.722-0.389,2.291-1.063L76.291,52.15c1.07-1.266,0.911-3.158-0.354-4.228C74.669,46.852,72.776,47.013,71.709,48.277z"/></g></svg>
   </div>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const layers = document.querySelectorAll('[data-speed]');
-      const vh = window.innerHeight;
-
-      window.addEventListener('scroll', () => {
-        const scrollY = window.scrollY;
-        layers.forEach(layer => {
-          const speed = parseFloat(layer.dataset.speed);
-          layer.style.transform = `translateY(${scrollY * -speed}px)`;
-        });
-      });
-    });
-  </script>
   <main>
     <div class="content">
       <div class="post">
